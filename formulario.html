@@ -1,21 +1,45 @@
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-<title>Cadastro</title>
-</head>
-<body>
-<div >
-<div >
-<form action="index.html" method="post">
-<h1> Cadastrar usuário </h1>
-<button type="submit">Enviar
-
-dados</button>
-
-</form>
-</div>
-</div>
-</body>
-</html>
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Formulário HTML</title>
+  <h1> Cadastrar usuário </h1>
+ </head>
+ <body>
+  <form action="" method="GET">
+   <fieldset>
+    <legend> 1 Dados pessoais </legend>
+    <input type="text" name="nome" placeholder="Nome:" >
+    <input type="text" name="Email" placeholder="Email:" >
+    <input type="text" name="Senha" placeholder="Senha:" >
+    <input type="text" name="Confirme a senha" placeholder="Confirme a senha:" >
+    <label for="fname"> Idade: </label> 
+    <input type="radio" name"Acima 17" value="Acima 17"> Acima 17
+    <input type="radio" name"Abaixo ou igual a 17" value="Abaixo ou igual a 17">Abaixo ou igual a 17
+    
+   </fieldset>
+   <br>
+   <fieldset>
+    <legend> 2 Perfil </legend>
+    
+    <div class="campo">
+                <br>
+                <label for="Descrição: "><strong> Descrição: </strong></label>
+                <textarea rows="6" style="width: 26em" id="Descrição:" name="Descrição:"></textarea>
+    </div>
+    
+    <select name="Perfil trabalho" size>
+    <option value= "Programador Python">Programador P</option>
+    <option value= "Programador JavaScript">Programador JavaScript</option>
+    <option value= "Prog">Prog</option>
+    <option value= "Programação">Programação</option>
+   </select>
+    <input type="checkbox" name"Programador" value="Programador">Programador
+    <input type="checkbox" name"Disgn" value="Disgn">Disgn
+    <input type="checkbox" name"Analista" value="Analista">Analista
+   </fieldset>
+   <br>
+      
+     <input type= "submit" value="Enviar">
+    </form>
+ </body>
+ </html>
