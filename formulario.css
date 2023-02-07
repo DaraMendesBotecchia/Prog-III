@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+body{
+    margin: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fc9b0a;
+
+}
+
+.borda{
+    font-family: 'Prompt', sans-serif;
+    background: #ffffff;
+    position:absolute;
+    left:28%;
+    display: flex;
+    justify-content: center;
+    border: solid 0px #000000;
+    border-radius: 10%;
+    height: 900px;
+    width: 590px;
+    box-shadow: 0 0 1em rgb(37, 37, 37);
+
+}
+
+.banco_inter{
+    color: #e98c00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    font-size: 27px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.posicao{
+    font-size: 30px;
+    color: #000000;
+    position: absolute;
+    left: 115px;
+    top: 80px;
+    align-items: center;
+}
+
+.nome{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: 200px;
+}
+
+.posicao_logo{
+    position: absolute;
+    left: 250px;
+
+}
+
+.input[type="text"]{
+    color: #000000;
+    border-radius: 7px;
+    width: 5px;
+
+}
+
+#n{
+    border: solid 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 45px;
+    width: 480px;
+    position: absolute;
+    top: 30px;
+    font-size: 19px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: Medium 400;
+    color: #000000;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2); 
+
+}
+
+.telefone{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: 300px;
+}
+
+.email{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: 400px;
+}
+
+.cpf{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: 500px;
+}
+
+.dtNasc{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 60px;
+    top: 600px;
+}
+
+#caixa{
+    position: absolute;
+    border: solid 1px black;
+    left: 50px;
+    top: 700px;
+    border-radius: 10px;
+    height: 22px;
+    width: 48px;
+    border: solid 0 #000000;
+    background-color: #e98c00;
+}
+
+
+.p{
+    position: absolute;
+    top: 680px;
+    left: 100px;
+    color: #aaa9a9;
+}
+
+.botao{
+    border: solid 0 black;
+    border-radius: 10px;
+    height: 45px;
+    width: 480px;
+    position: absolute;
+    top: 30px;
+    font-size: 19px;
+    font-family: bold;
+    color: #ffffff;
+    background-color: #e98c00;
+    top: 800px;
+    left: 57px;
+
+}
+
+.botao:hover {
+    background: #f7ae27;
+}
+
+#st{
+    color: #e98c00;
+}
+
+.logo{
+    position: absolute;
+    top: 45px; 
+    left: 252px;
+    font-size: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
