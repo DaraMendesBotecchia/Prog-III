@@ -1,57 +1,46 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title> Cadastro Usuário </title>
-    </head>
-<body>
-    <form>
-                    <h2 class="posicao"> Abra já a sua Conta Digital </h2>
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Formulário HTML</title>
+  <h1> Cadastrar usuário </h1>
+ </head>
+ <body>
+  <form action="" method="GET">
+   <fieldset>
+    <legend> 1 Dados pessoais </legend>
+    <input type="text" name="nome" placeholder="Nome:" >
+    <input type="text" name="Email" placeholder="Email:" >
+    <input type="text" name="Senha" placeholder="Senha:" >
+    <input type="text" name="Confirme a senha" placeholder="Confirme a senha:" >
+    <label for="fname"> Idade: </label> 
+    <input type="radio" name"Acima 17" value="Acima 17"> Acima 17
+    <input type="radio" name"Abaixo ou igual a 17" value="Abaixo ou igual a 17">Abaixo ou igual a 17
+    
+   </fieldset>
+   <br>
+   <fieldset>
+    <legend> 2 Perfil </legend>
+    
+    <div class="campo">
+                <br>
+                <label for="Descrição: "><strong> Descrição: </strong></label>
+                <textarea rows="6" style="width: 26em" id="Descrição:" name="Descrição:"></textarea>
+    </div>
+    <label for="fname"> Perfil trabalho: </label> 
+    <select name="Perfil trabalho" size>
+    <option value= "front end developer">front end developer</option>
+    <option value= "Desenvolvedor Web."> Desenvolvedor Web</option>
+    <option value= "Desenvolvedor Back-End.">Desenvolvedor Back-End</option>
+    <option value= "Desenvolvedor Mobile.">Desenvolvedor Mobile</option>
+   </select>
+    <label for="fname"> Interesses: </label> 
+    <input type="checkbox" name"Programador" value="Programador">Programador
+    <input type="checkbox" name"Disgn" value="Disgn">Disgn
+    <input type="checkbox" name"Analista" value="Analista">Analista
+   </fieldset>
+   <br>
       
-                <label class="nome">
-                    <strong> Nome </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Digite seu nome" required>
-                </label>
-
-                <label class="telefone">
-                    <strong> Telefone </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Digite seu telefone" required>
-                </label>
-
-
-                <label class="email">
-                    <strong> E-mail </strong>
-                    <br>
-                    <input type="email" name="n" id="n" placeholder="Digite seu e-mail" required>  
-                </label>
-
-                <label class="cpf">
-                    <strong> CPF </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Digite seu CPF" required>
-                </label>
-
-                <label class="dtNasc">
-                    <strong> Data de Nascimento </strong>
-                    <input type="date" name="n" id="n" placeholder="Digite seu CPF" required>
-                </label>
-
-                <label class="selecione">
-                    <div class="p"> 
-                        <p> Autorizo o Inter a tratar meus dados pessoais para envio de comunicações sobre seus produtos e serviços e também estou de acordo com a <strong id="st"> Política de Privacidade.</strong></p>
-                    </div>
-                    <input type="checkbox" class="check" name="n" id="caixa" required>
-                </label>
-
-
-                <label>
-                    <button type="submit" class="botao" onsubmit="" title="Enviar Contato"> CONCLUÍDO </button> 
-                </label>
-
-        </div>
+     <input type= "submit" value="Enviar">
     </form>
-</body>
-</html>
+ </body>
+ </html>
