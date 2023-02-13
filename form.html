@@ -1,77 +1,71 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="form.css" media="screen">
-        <title> Banco Inter </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulário </title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <form>
-        <div class="borda">
-                    <h2 class="posicao"> Faça já o seu cadastro </h2>
-                </label>
 
-                <label class="nome">
-                    <strong> Nome </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Digite seu nome:" required>
-                </label>
+    <div id="tela"> 
+        <div id="aplicacao"> 
+            <form id="form">
+                <div id="circ"> 1 </div> <div id="cent">  Dados Pessoais </div> 
+                    <h2 id="titulo"> Cadastrar usuário </h2> <br><br>
+                    <!-- Nome -->
+                    <label> Nome: </label> <br>
+                    <input type="text" id="tam"> <br><br>
 
-                <label class="telefone">
-                    <strong> Email </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Digite seu email:" required>
-                </label>
+                    <!-- Email -->
+                    <label> Email: </label> <br>
+                    <input type="text" id="tam"> <br><br>
 
+                    <!-- Senha -->
+                    <label> Senha: </label> <br>
+                    <input type="password" id="tam"> <br><br>
 
-                <label class="email">
-                    <strong> Senha </strong>
-                    <br>
-                    <input type="email" name="n" id="n" placeholder="Digite sua senha:" required>  
-                </label>
+                    <!-- Confirma Senha -->
+                    <label> Confirma Senha: </label> <br>
+                    <input type="password" id="tam"> <br><br>
 
-                <label class="cpf">
-                    <strong> Confirme sua senha </strong>
-                    <br>
-                    <input type="text" name="n" id="n" placeholder="Confirme sua senha:" required>
-                </label>
+                    <!-- Idade -->
+                    <label> Idade: </label> <br>
+                    <input type="radio">
+                    <label> Acima 17 </label> <br>
+                    <input type="radio"> 
+                    <label> Abaixo ou igual 17 </label> <br> <br>
 
-                <label class="dtNasc">
-                    <strong> Data de Nascimento </strong>
-                    <input type="date" name="n" id="n" placeholder="Digite seu CPF" required>
-                </label>
+                    <!-- Pefil 2 -->
+                    <div id="perfil"> 2 </div> <div id="perfil_2">  Dados Pessoais </div> <br><br>
 
-                <label class="selecione">
-                    <div class="p"> 
-                        <p> Programador  </p>
-                    </div>
-                    <input type="checkbox" class="check" name="n" id="caixa" required>
-                </label>
-                
-                <label class="selecione">
-                    <div class="p"> 
-                        <p> Design  </p>
-                    </div>
-                    <input type="checkbox" class="check" name="n" id="caixa" required>
-                </label>
-           
-                <label class="selecione">
-                    <div class="p"> 
-                        <p> Analista </p>
-                    </div>
-                    <input type="checkbox" class="check" name="n" id="caixa" required>
-                </label>
+                    <!-- Descrição -->
+                    <label for="descricao"> Descrição: </label><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="30"> </textarea> <br> <br>
 
+                    <!-- Perfil trabalho -->
+                    <label for="trab"> Perfil trabalho: </label><br>
+                    <select name="areas" id="areas"> 
+                        <option value="Front_End Developer" > Front_End Developer </option>
+                    </select> <br><br>
 
-                <label>
-                    <button type="submit" class="botao" onsubmit="" title="Enviar Contato"> CONCLUÍDO </button> 
-                </label>
+                    <!-- Interesse -->
+                    <label for="inte"> Interesses: </label><br>
+                    <input type="checkbox" id="inte" name="inte">
+                    <label> Programador </label><br>
 
-                <div class="logo">
-                    <p> BANCO </p>
-                </div>
+                    <input type="checkbox" id="inte" name="inte">
+                    <label> Design </label><br>
+
+                    <input type="checkbox" id="inte" name="inte">
+                    <label> Analista </label><br><br>
+
+                    <!-- Botão -->
+                    <button type="submit" id="bot"> Enviar dados </button> 
+            </form>
         </div>
-    </form>
+    </div>
+    
 </body>
 </html>
