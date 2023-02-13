@@ -1,34 +1,31 @@
-#tela{
-    width: 450px;
-    height: 890px;
-    position: absolute;
-    left: 40%;
-    top: auto;
-    bottom: auto;
-    border: solid 1px;
-    background-color:#D4DCE5;
-}
 
 #aplicacao{
     margin: 20px;
 }
 
-#tam{
-    width: 400px;
-    height: 22px;
-    font-size: 18px;
-    margin: 0;
-    padding: 7px;
-    outline: 0;
-    height: auto;
-    border: 0;
-    box-shadow: 0 1px 0 black;
-
-}
-
 #titulo{
     display: flex;
     justify-content: center;
+}
+
+#perfil{
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 490px;
+    height: 23px;
+    width: 25px;
+    background-color: #6D0036;
+    color: white;
+    font-size: 20px;
+}
+
+#perfil_2{
+    position: absolute;
+    top: 490px;
+    left: 46px;
+    font-size: 20px;
 }
 
 #num_circ{
@@ -66,6 +63,19 @@
     font-size: 20px;
 }
 
+#tam{
+    width: 400px;
+    height: 22px;
+    font-size: 18px;
+    margin: 0;
+    padding: 7px;
+    outline: 0;
+    height: auto;
+    border: 0;
+    box-shadow: 0 1px 0 black;
+
+}
+
 #perfil{
     border-radius: 50px;
     display: flex;
@@ -79,12 +89,6 @@
     font-size: 20px;
 }
 
-#perfil_2{
-    position: absolute;
-    top: 490px;
-    left: 46px;
-    font-size: 20px;
-}
 
 #areas{
     width: 410px;
@@ -106,4 +110,15 @@
 #descricao{
     width: 400px;
     font-size: 17px;
+}
+
+#tela{
+    width: 450px;
+    height: 890px;
+    position: absolute;
+    left: 40%;
+    top: auto;
+    bottom: auto;
+    border: solid 1px;
+    background-color:#D4DCE5;
 }
