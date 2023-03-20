@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <style>
+      /* estilo da navbar */
+      nav {
+        background-color: #C0C0C0;
+        overflow: hidden;
+      }
+      nav a {
+        color: #fff;
+        float: left;
+        font-size: 18px;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color:#4682B4;
+        color: #333;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+
+      form {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+        margin: 20px auto;
+        max-width: 500px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      
+      input[type="email"],
+      input[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin-top: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <a href="teste.html"> MENU </a>
+    </nav>
+    <form>
+      <h1> Login </h1>
+      <label for="email">Usuário:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      </label>
+      <input type="submit" value="Autenticar">
+
+      
+    </form>
+  </body>
+</html>
