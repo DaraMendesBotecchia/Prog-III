@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fundo Quadrado</title>
+	<title> Aluno </title>
 	<style>
 		#fundo-quadrado {
 			position: fixed;
 			top: 0;
-			left: 0;
+			left: 100;
 			width: 70%;
 			height: 70%;
 			background-color: #E4FF7D;
 			opacity: 0.2; /* Definindo a transparência do fundo */
 			z-index: 999; /* Definindo a ordem de empilhamento */
 			margin: 100px auto;
-        	padding: 50px;
+      padding: 50px;
+      border-bottom: 3px solid rgb(0,255,0);
+      border-right: 3px solid rgb(0,255,0);
+      border-left: 3px solid rgb(255,255,0);
+      border-left: 3px solid rgb(255,255,0);
 		}
 
 		body{
@@ -48,8 +52,9 @@
 <body>
     <nav>
         <ul>
-          <li> <a href="aluno.html"> ALUNO </a></li>
-          <li><a href="professor.html"> PROFESSOR </a></li>
+          <button style="background-color:#E0FFFF; border-bottom: 3px solid rgb(0,255,0);  border-right: 3px solid rgb(0,255,0); border-left: 3px solid #A020F0; border-left: 3px solid #A020F0; color:black" > Aluno </button>
+          <button onclick="aluno.html"> Aluno </button>
+          <button onclick="prfessor.html"> Professor </button>
         </ul>
       </nav>
 	<div id="fundo-quadrado"></div>
