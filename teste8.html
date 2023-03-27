@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cadastrar Usuário </title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+		}
+
+		form {
+			margin: 0 auto;
+			width: 50%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #ccc;
+            margin: 20px auto;
+            padding: 50px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"], textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			resize: vertical;
+		}
+
+		input[type="submit"] {
+			background-color: #034fdd;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		/* Estilo para os labels que possuem asterisco para indicar que são campos obrigatórios */
+		.required:after {
+			content: "*";
+			color: red;
+			margin-left: 5px;
+		}
+
+		/* Estilo para um título do formulário */
+		.form-title {
+			text-align: fixed;
+			margin-bottom: 30px;
+			font-size: 1.5em;
+            font-family: times ;
+            background-color: #cccccce5;
+		}
+
+		/* Estilo para uma mensagem de sucesso ao enviar o feedback */
+		.success-message {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		/* Estilo para uma mensagem de erro ao enviar o feedback */
+		.error-message {
+			background-color: #f44336;
+			color: #fff;
+			padding: 10px;
+			border-radius: 4px;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+
+       /* estilo da navbar */
+      nav {
+        background-color: #8d8d8d;
+        overflow: hidden;
+      }
+      nav a {
+        color: black;
+        float: left;
+        font-size: 18px;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover {
+        background-color: #034fdd; fixed
+
+        color: black;
+      }
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+
+
+
+	</style>
+</head>
+<body>
+
+     <!-- navbar -->
+     <nav>
+        <a href="teste.html">Home</a>
+      </nav>
+    
+	<form action="adicionar_feedback.php" method="POST">
+		<div class="form-title">Login</div>
+
+		<label for="usuário" class="required">Usuário:</label>
+		<input type="text" name="usuário" required>
+		
+		<label for="senha" class="required">Senha:</label>
+		<textarea name="senha" required></textarea>
+		
+		<input type="submit" value="Autenticar">
+
+		<!-- Mensagem de sucesso ao enviar o feedback -->
+		<div class="success-message" style="display: none;">Feedback enviado com sucesso!</div>
+        <!-- Mensagem de erro ao enviar o feedback -->
+        <div class="error-message" style="display: none;">Erro ao enviar dados. Por favor, tente novamente.</div>
+    </form>
+    <script>
+        // Selecionando o formulário e os elementos da mensagem de sucesso e de erro
+        const form = document.querySelector('form');
+        const successMessage = document.querySelector('.success-message');
+        const errorMessage = document.querySelector('.error-message');
+    
+        // Adicionando um evento de submit ao formulário
+        form.addEventListener('submit', (event) => {
+            // Prevenindo o comportamento padrão do submit, que é atualizar a página
+            event.preventDefault();
+    
+            // Criando um objeto FormData a partir dos campos do formulário
+            const formData = new FormData(form);
+    
+            // Enviando o formulário via AJAX com o método POST
+            fetch('adicionar_feedback.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                // Verificando se a resposta da requisição foi bem-sucedida
+                if (response.ok) {
+                    // Exibindo a mensagem de sucesso e limpando o formulário
+                    successMessage.style.display = 'block';
+                    form.reset();
+                } else {
+                    // Exibindo a mensagem de erro
+                    errorMessage.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                // Exibindo a mensagem de erro
+                errorMessage.style.display = 'block';
+            });
+        });
+    </script>
+</    
