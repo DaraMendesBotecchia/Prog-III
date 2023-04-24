@@ -1,4 +1,4 @@
-<script defer>
+
   const accordionItems = document.querySelectorAll('.accordion-item');
 
   accordionItems.forEach(item => {
@@ -9,7 +9,5 @@
       content.classList.toggle('show');
     });
   });
-</script>
-
 
 
