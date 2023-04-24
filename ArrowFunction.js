@@ -2,7 +2,7 @@ const meuSlide = document.querySelectorAll('.meuSlide');
 const numero = document.querySelectorAll('.numero');
 let slideAtual = 1;
 
-// Função que mostra o slide atual
+// Função para mostrar o slide atual 
 const mostrarSlide = (n) => {
   if (n > meuSlide.length) {
     slideAtual = 1;
@@ -19,12 +19,10 @@ const mostrarSlide = (n) => {
   meuSlide[slideAtual - 1].style.display = 'block';
 }
 
-// Mostra o slide atual
+// Mostrando o slide atual
 mostrarSlide(slideAtual);
 
-// Função que avança ou retrocede um slide
+// Função para avançar ou retrocede um slide 
 const maisSlide = (n) => {
   mostrarSlide(slideAtual += n);
 }
-
-
