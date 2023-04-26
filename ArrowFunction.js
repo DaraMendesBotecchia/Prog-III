@@ -24,5 +24,6 @@ mostrarSlide(slideAtual);
 
 // Função para avançar ou retrocede um slide 
 const maisSlide = (n) => {
+  console.log(n)
   mostrarSlide(slideAtual += n);
 }
